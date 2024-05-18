@@ -1,0 +1,24 @@
+meme_dict = {
+            "CRINGE": {"definicion": "Algo que resulta incómodo, vergonzoso o embarazoso de presenciar."},
+            "LOL": {"definicion": "Laughing Out Loud en inglés, que se traduce como ""Riéndome en voz alta"". Se usa para expresar que algo es gracioso."},
+            "ROFL": {"definicion": "Rolling On the Floor Laughing, que se traduce como ""Rodando por el suelo de la risa"". Se utiliza para expresar una risa muy intensa."},
+            "SHEESH": {"definicion": "Una expresión que denota desaprobación o incredulidad, similar a un suspiro exasperado."},
+            "CREEPY": {"definicion": "Algo espeluznante, inquietante o que da miedo."},
+            "AGGRO": {"definicion": "Aggression en inglés, que significa agresión. Se usa para referirse a alguien que se pone agresivo o enojado."},
+            "IDK": {"definicion": "I Don't Know, significa no sé"},
+            "BTW": {"definicion": "By The Way, por cierto o a propósito."},
+            }
+
+comienzo = input("Hola! ¿Tienes dudas con respecto a algunas expresiones? (si/no)")
+if comienzo == "si":
+    for word in range(0,8):
+        print(".")
+        word = input("Escribe la palabra que no entiendas, (¡con mayúsculas!): ")
+        
+        if word in meme_dict.keys():
+            print("La definición de", word, "es:", meme_dict[word]["definicion"])
+        else:
+            print("No se encontró una definición para", word)
+
+else:
+    print("Perfecto! No dudes en preguntarme si no sabes alguna expresión ;)")
